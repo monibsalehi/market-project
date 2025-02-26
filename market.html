@@ -1,0 +1,2484 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./market.css" />
+  </head>
+  <body>
+    <div class="page--login">
+      <h2 class="tatle--page--login">به مارکت استور خوش آمدید</h2>
+      <div class="username">
+        <svg4
+        
+          class="username--input--icon icon--input"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
+          <path
+            d="M6.201 18.744a4 4 0 0 1 3.799 -2.744h4a4 4 0 0 1 3.798 2.741"
+          />
+          <path
+            d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z"
+          />
+        </svg>
+        <label for=""></label>
+        <input class="username--input" type="text" />
+      </div>
+      <div class="password">
+        <svg
+          class="password--input--icon icon--input"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"
+          />
+          <path
+            d="M8 11m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z"
+          />
+          <path d="M10 11v-2a2 2 0 1 1 4 0v2" />
+        </svg>
+        <input class="password--input" type="password" />
+      </div>
+
+      <button class="btn--page--login">ورود</button>
+    </div>
+    <div class="logiin hidden"></div>
+    <div class="overlay hidden"></div>
+    <div class="autobox hidden">
+      <div class="searchbox">
+        <div class="search">
+          <svg
+            class="search--icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+          <input
+            type="text"
+            class="input--search"
+            placeholder="محصول،برند یا دسته مورد نظرتان را جستجو کنید"
+          />
+        </div>
+      </div>
+      <div class="dd">
+        <nav class="log-or-sing">
+          <button class="btn btn--login">ورود</button>
+          <button class="btn btn--sing">ثبت نام</button>
+        </nav>
+        <svg
+          class="shop--icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+          <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+          <path d="M17 17h-11v-14h-2" />
+          <path d="M6 5l14 1l-1 7h-13" />
+        </svg>
+      </div>
+    </div>
+    <header class="header hidden">
+      <nav class="nav--header">
+        <div class="navbar category">
+          <svg
+            class="icon--nav icon--category"
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M18 6H6m12 4H6m12 4H6m12 4H6"
+            />
+          </svg>
+
+          <button class="btnnav btn--category">دسته بندی محصولات</button>
+        </div>
+        <div class="navbar off">
+          <svg
+            class="icon--nav icon--off"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-basket-dollar"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M17 10l-2 -6" />
+            <path d="M7 10l2 -6" />
+            <path
+              d="M13 20h-5.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304"
+            />
+            <path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+            <path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+            <path d="M19 21v1m0 -8v1" />
+          </svg>
+          <button class="btnnav btn--off">تخفیفات</button>
+        </div>
+        <div class="navbar gift--card">
+          <svg
+            class="icon--nav icon--gift"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-gift"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M11 14v8h-4a3 3 0 0 1 -3 -3v-4a1 1 0 0 1 1 -1h6zm8 0a1 1 0 0 1 1 1v4a3 3 0 0 1 -3 3h-4v-8h6zm-2.5 -12a3.5 3.5 0 0 1 3.163 5h.337a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-7v-5h-2v5h-7a2 2 0 0 1 -2 -2v-1a2 2 0 0 1 2 -2h.337a3.486 3.486 0 0 1 -.337 -1.5c0 -1.933 1.567 -3.5 3.483 -3.5c1.755 -.03 3.312 1.092 4.381 2.934l.136 .243c1.033 -1.914 2.56 -3.114 4.291 -3.175l.209 -.002zm-9 2a1.5 1.5 0 0 0 0 3h3.143c-.741 -1.905 -1.949 -3.02 -3.143 -3zm8.983 0c-1.18 -.02 -2.385 1.096 -3.126 3h3.143a1.5 1.5 0 1 0 -.017 -3z"
+            />
+          </svg>
+          <button class="btnnav btn--gift">کارت هدیه</button>
+        </div>
+        <div class="navbar buy">
+          <svg
+            class="icon--nav icon--buy"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card-pay"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12 19h-6a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4.5"
+            />
+            <path d="M3 10h18" />
+            <path d="M16 19h6" />
+            <path d="M19 16l3 3l-3 3" />
+            <path d="M7.005 15h.005" />
+            <path d="M11 15h2" />
+          </svg>
+          <button class="btnnav btn--buy">خرید اقساطی</button>
+        </div>
+      </nav>
+    </header>
+    <main class="hidden">
+      <section class="slider">
+        <div class="slide">
+          <div class="slide--img">
+            <img src="./شارژر.webp" alt="" />
+          </div>
+          <span>شارژر</span>
+        </div>
+        <div class="slide">
+          <div class="slide--img">
+            <img src="./لبتاب استوری.webp" alt="" />
+          </div>
+          <span>لپتاب</span>
+        </div>
+        <div class="slide">
+          <div class="slide--img">
+            <img src="./چابگر.webp" alt="" />
+          </div>
+          <span>چاپگر</span>
+        </div>
+        <div class="slide">
+          <div class="slide--img">
+            <img src="./وای فای.webp" alt="" />
+          </div>
+          <span>وای فای</span>
+        </div>
+        <div class="slide">
+          <div class="slide--img">
+            <img src="./پاوربانک.webp" alt="" />
+          </div>
+          <span>پاوربانک</span>
+        </div>
+        <div class="slide">
+          <div class="slide--img">
+            <img src="./دسته بازی.webp" alt="" />
+          </div>
+          <span>گیمینگ</span>
+        </div>
+        <div class="slide">
+          <div class="slide--img">
+            <img src="./کابل۲.webp" alt="" />
+          </div>
+          <span>کابل</span>
+        </div>
+        <div class="slide">
+          <div class="slide--img">
+            <img src="./ساعت.webp" alt="" />
+          </div>
+          <span>ساعت</span>
+        </div>
+      </section>
+
+      <section class="products--off">
+        <div class="products--header">
+          <span>تخفیفات ویژه</span>
+          <div class="show--all">
+            <button class="btn--show--all">نمایش همه</button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M5 12l4 4" />
+              <path d="M5 12l4 -4" />
+            </svg>
+          </div>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product">
+                <img class="product--img" src="./ps5.webp" alt="" />
+                <h4 class="caption">پلی استیشن 5 اسلیم دیسک خور</h4>
+                <div class="price">
+                  <span class="takhfif">۲۹٪</span>
+                  <div class="toman">
+                    <h6>۲۴/۱۰۰/۰۰۰</h6>
+                    <span>تومان</span>
+                  </div>
+                </div>
+                <div class="toman--off">
+                  <h6>۳۴/۱۰۰/۴۳۴</h6>
+                  <span>تومان</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img class="product--img" src="./s24ulta.webp" alt="" />
+                <h4 class="caption">پلی استیشن 5 اسلیم دیسک خور</h4>
+                <div class="price">
+                  <span class="takhfif">۲۹٪</span>
+                  <div class="toman">
+                    <h6>۲۴/۱۰۰/۰۰۰</h6>
+                    <span>تومان</span>
+                  </div>
+                </div>
+                <div class="toman--off">
+                  <h6>۳۴/۱۰۰/۴۳۴</h6>
+                  <span>تومان</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img class="product--img" src="./laptap.webp" alt="" />
+                <h4 class="caption">پلی استیشن 5 اسلیم دیسک خور</h4>
+                <div class="price">
+                  <span class="takhfif">۲۹٪</span>
+                  <div class="toman">
+                    <h6>۲۴/۱۰۰/۰۰۰</h6>
+                    <span>تومان</span>
+                  </div>
+                </div>
+                <div class="toman--off">
+                  <h6>۳۴/۱۰۰/۴۳۴</h6>
+                  <span>تومان</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img class="product--img" src="./پاوربانک.webp" alt="" />
+                <h4 class="caption">پلی استیشن 5 اسلیم دیسک خور</h4>
+                <div class="price">
+                  <span class="takhfif">۲۹٪</span>
+                  <div class="toman">
+                    <h6>۲۴/۱۰۰/۰۰۰</h6>
+                    <span>تومان</span>
+                  </div>
+                </div>
+                <div class="toman--off">
+                  <h6>۳۴/۱۰۰/۴۳۴</h6>
+                  <span>تومان</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img class="product--img" src="./شارژر.webp" alt="" />
+                <h4 class="caption">پلی استیشن 5 اسلیم دیسک خور</h4>
+                <div class="price">
+                  <span class="takhfif">۲۹٪</span>
+                  <div class="toman">
+                    <h6>۲۴/۱۰۰/۰۰۰</h6>
+                    <span>تومان</span>
+                  </div>
+                </div>
+                <div class="toman--off">
+                  <h6>۳۴/۱۰۰/۴۳۴</h6>
+                  <span>تومان</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img class="product--img" src="./کیس.webp" alt="" />
+                <h4 class="caption">پلی استیشن 5 اسلیم دیسک خور</h4>
+                <div class="price">
+                  <span class="takhfif">۲۹٪</span>
+                  <div class="toman">
+                    <h6>۲۴/۱۰۰/۰۰۰</h6>
+                    <span>تومان</span>
+                  </div>
+                </div>
+                <div class="toman--off">
+                  <h6>۳۴/۱۰۰/۴۳۴</h6>
+                  <span>تومان</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img class="product--img" src="./وای فای.webp" alt="" />
+                <h4 class="caption">پلی استیشن 5 اسلیم دیسک خور</h4>
+                <div class="price">
+                  <span class="takhfif">۲۹٪</span>
+                  <div class="toman">
+                    <h6>۲۴/۱۰۰/۰۰۰</h6>
+                    <span>تومان</span>
+                  </div>
+                </div>
+                <div class="toman--off">
+                  <h6>۳۴/۱۰۰/۴۳۴</h6>
+                  <span>تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <div class="products"></div>
+      </section>
+      <section class="berand--phone">
+        <div class="tatle">
+          <h2>برندهای موبایل</h2>
+        </div>
+        <div class="brands">
+          <div class="brand brand--samsung">
+            <img
+              src="./samsung--icon.png"
+              alt="#"
+              class="icon--brand apple--icon"
+            />
+          </div>
+          <div class="brand brand--apple">
+            <img
+              src="./apple-icon.png"
+              alt="#"
+              class="icon--brand apple--icon"
+            />
+          </div>
+          <div class="brand brand--poxo">
+            <img
+              src="./POCO-Emblem.png"
+              alt="#"
+              class="icon--brand apple--icon"
+            />
+          </div>
+          <div class="brand brand--xiaomi">
+            <img
+              src="./Xiaomi-logo.png"
+              alt="#"
+              class="icon--brand apple--icon"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="choose">
+        <div class="section__title">
+          <h2>انتخاب سریع لپ تاپ</h2>
+        </div>
+        <div class="select">
+          <div class="select--button">
+            <button
+              class="btn--choose chooses__tab--1 chooses__tab--active"
+              data-tab="1"
+            >
+              براساس قیمت
+            </button>
+            <button class="btn--choose chooses__tab--2" data-tab="2">
+              براساس کاربری
+            </button>
+            <button class="btn--choose chooses__tab--3" data-tab="3">
+              براساس گرافیک
+            </button>
+            <button class="btn--choose chooses__tab--4" data-tab="4">
+              براساس رم
+            </button>
+            <button class="btn--choose chooses__tab--5" data-tab="5">
+              براساس سی پی یو
+            </button>
+          </div>
+        </div>
+        <div
+          class="chooses__content chooses__content--1 chooses__content--active"
+        >
+          <div class="prices">
+            <span>20 تا 40 تومان</span>
+            <span>40 تا 60 تومان</span>
+            <span>60 تا 80 تومان</span>
+            <span>80 تا 100 تومان</span>
+            <span>100 تا 150 تومان</span>
+            <span>بالای 150 تومان</span>
+          </div>
+        </div>
+        <div class="chooses__content chooses__content--2">
+          <div class="prices">
+            <span>گیمینگ</span>
+            <span>طراحی و تدوین</span>
+            <span>آهنگسازی</span>
+            <span>دانشجویی</span>
+            <span>روزمره</span>
+            <span>برنامه نویسی</span>
+            <span>صنعتی</span>
+            <span>اموزشی</span>
+          </div>
+        </div>
+        <div class="chooses__content chooses__content--3">
+          <div class="prices">
+            <span>INTEGRATED</span>
+            <span>RTX 2050</span>
+            <span>RTX 3050</span>
+            <span>RTX 4050</span>
+            <span>RTX 4060</span>
+            <span>RTX 4070</span>
+            <span>RTX 4080</span>
+            <span>RTX 4090</span>
+          </div>
+        </div>
+        <div class="chooses__content chooses__content--4">
+          <div class="prices">
+            <span>8GB</span>
+            <span>12GB</span>
+            <span>16GB</span>
+            <span>24GB</span>
+            <span>32GB</span>
+            <span>64GB</span>
+          </div>
+        </div>
+        <div class="chooses__content chooses__content--5">
+          <div class="prices">
+            <span>APPLE</span>
+            <span>SNAPDRAGON</span>
+            <span>AMD</span>
+            <span>INTEL</span>
+          </div>
+        </div>
+      </section>
+      <section class="commoditys commodity--sumsung">
+        <div class="commoditys--tatle">
+          <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-badge-left"
+            >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M11 17h6l-4 -5l4 -5h-6l-4 5z" />
+          </svg>
+          <p>محصولات سامسونگ</p>
+        </div>
+        <button class="see--all">مشاهده همه محصولات</button>
+        </div>
+        <div class="commodity">
+          <div class="poster--commodity poster--sumsung">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung secret">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung secret">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung secret">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung secret">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung secret">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung secret">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung secret">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung secret">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung secret">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="poster--commodity poster--sumsung secret">
+            <div class="commodity--off"><span>OFF</span></div>
+            <img class="commodity--img" src="./a55.jpg" alt="" />
+            <div class="specifications">
+              <div class="specifications--icon screen--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+                  />
+                  <path d="M11 4h2" />
+                  <path d="M12 17v.01" />
+                </svg>
+                <span>6.6</span>
+              </div>
+              <div class="specifications--icon battery--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-vertical-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18v-11a2 2 0 0 1 2 -2h.5a.5 .5 0 0 0 .5 -.5a.5 .5 0 0 1 .5 -.5h3a.5 .5 0 0 1 .5 .5a.5 .5 0 0 0 .5 .5h.5a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2"
+                  />
+                  <path d="M10 17h4" />
+                  <path d="M10 14h4" />
+                  <path d="M10 11h4" />
+                  <path d="M10 8h4" />
+                </svg>
+                <span>5000mA</span>
+              </div>
+              <div class="specifications--icon memory--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-device-sd-card"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 21h10a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2h-6.172a2 2 0 0 0 -1.414 .586l-3.828 3.828a2 2 0 0 0 -.586 1.414v10.172a2 2 0 0 0 2 2z"
+                  />
+                  <path d="M13 6v2" />
+                  <path d="M16 6v2" />
+                  <path d="M10 7v1" />
+                </svg>
+                <span>256GB</span>
+              </div>
+              <div class="specifications--icon camera--icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                  />
+                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <span>50MP</span>
+              </div>
+            </div>
+            <span class="name--phone name--phone--sumsung"
+              >گوشی موبايل سامسونگ گلکسی A55 5G ظرفیت 256 گیگابایت رم 8 گیگابایت
+              - ویتنام</span
+            >
+            <div class="like">
+              <span>۴.۱</span>
+              <svg
+                class="icon-stare"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                />
+              </svg>
+            </div>
+            <div class="discount">
+              <span class="discount--percentage">5%</span>
+              <div class="price--discount">
+                <h4>26,589,000</h4>
+                <span>تومان</span>
+              </div>
+            </div>
+            <div class="original--price">
+              <h4>28,900,000</h4>
+              <span>تومان</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="commoditys commodity--apple"></section>
+      <section class="commoditys commodity--poxo"></section>
+      <section class="commoditys commodity--xiaomi"></section>
+      <section class="laptop">
+        <div class="filter">
+          
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./market.js"></script>
+  </body>
+</html>
+
